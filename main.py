@@ -5,7 +5,12 @@ from tkinter import ttk
 class Face_Recognition_System:
     def __init__(self,root):
         self.root=root
-        self.root.geometry("1530x790+0+0")
+        screen_width = root.winfo_screenwidth()
+        screen_height = root.winfo_screenheight()
+        # Set the window size and position in the center of the screen
+        root.geometry(f"{screen_width}x{screen_height}+0+0")
+        # Maximize the window
+        root.wm_state('zoomed')
         self.root.title("Face Recognition System")
 
 
