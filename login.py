@@ -15,9 +15,20 @@ Label(root,image=img,bg='white').place(x=200,y=200)
 
 frame=Frame(root,width=600,height=500,bg="#F5F5F5")
 frame.place(x=620,y=130)
+#57a1f8
+heading=Label(frame,text='Sign in',fg='#57a1f8',bg='#F5F5F5',font=('Microsoft YaHei UI Light',40))
+heading.place(x=230-15,y=5+15)
 
-heading=Label(frame,text='Sign in',fg='#57a1f8',bg='#F5F5F5',font=('Microsoft YaHei UI Light',23,'bold'))
-heading.place(x=230,y=5)
+user=Entry(frame,width=25,fg='#002D62',border=0,bg="#F5F5F5",font=('Microsoft YaHei UI Light',15))
+user.place(x=230+15,y=95+90)
+user.insert(0,'Username')
+Frame(frame,width=295,height=2,bg='black').place(x=200-50,y=128+90)
+
+code=Entry(frame,width=25,fg='#002D62',border=0,bg="#F5F5F5",font=('Microsoft YaHei UI Light',15))
+code.place(x=230+15,y=165+90)
+code.insert(0,'Password')
+Frame(frame,width=295,height=2,bg='black').place(x=200-50,y=198+90)
+
 
 
 root.mainloop()
